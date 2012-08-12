@@ -1,0 +1,4 @@
+#!/system/bin/sh
+cp -f /system/etc/usb.fix /data/property/persist.sys.usb.config
+chmod 600 /data/property/persist.sys.usb.config
+exit 0

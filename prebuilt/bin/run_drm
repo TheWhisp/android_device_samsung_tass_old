@@ -1,0 +1,6 @@
+#!/system/bin/sh
+mount -o remount,rw /system
+chmod +x /system/bin/drmserver
+/system/bin/drmserver&
+mount -o remount,ro /system
+exit 0

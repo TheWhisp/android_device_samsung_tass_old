@@ -1,0 +1,9 @@
+#!/system/bin/sh
+#
+# Dirty "trick" to enable bluetooth
+#
+mount -o remount,rw /system
+echo "Setting permissions for brcm_patchram_plus! (dirty hack, I know :/)"
+chmod 7777 /system/bin/brcm_patchram_plus
+mount -o remount,ro /system
+exit 0
