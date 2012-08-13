@@ -35,7 +35,7 @@ on init
     insmod /lib/modules/fsr_glue.ko
 	
 on boot
-    
+
 # Increase read throughput from sd card
     write /sys/block/mmcblk0/bdi/read_ahead_kb 8196
     
