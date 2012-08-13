@@ -1,5 +1,4 @@
 # Copyright (C) 2012 The Android Open Source Project
-# Copyright (C) 2012 Dāvis Mālnieks (TheWhisp), Rohan Bathla (rohan007)
 #
 # IMPORTANT: Do not create world writable files or directories.
 # This is a common source of Android security bugs.
@@ -427,7 +426,6 @@ on property:dev.bootcomplete=1
     stop hciattach
     stop dhcp-service
     start dhcp-service
-    chmod 7777 /system/etc/brcm_patchram_plus
 
 on property:init.svc.wpa_supplicant=stopped
     stop dhcpcd	
@@ -634,5 +632,3 @@ service get_macaddrs /system/bin/get_macaddrs
 
 on property:init.svc.ril-daemon=running
     start get_macaddrs
-	
-	
