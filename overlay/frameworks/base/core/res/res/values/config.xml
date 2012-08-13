@@ -48,7 +48,6 @@
 
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
-<<<<<<< HEAD
      <!-- Values greater or equal to 0 will enable electronbeam screen-on
          animation with the specified delay (in milliseconds), -1 will disable the animation -->
     <integer name="config_screenOnAnimation">250</integer>
@@ -59,10 +58,9 @@
     <!-- Timeout in MS for how long you have to long-press the back key to
          kill the foreground app. -->
     <integer name="config_backKillTimeout">1000</integer>
-=======
+
     <!-- True will enable the electron beam screen-off animation. -->
     <bool name="config_screenOffAnimation">true</bool>
->>>>>>> bca8d6ea2a3c65f380cc3113deaf32b715a737c3
     
     <bool name="config_batterySdCardAccessibility">true</bool>
 
