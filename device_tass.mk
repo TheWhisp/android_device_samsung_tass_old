@@ -54,8 +54,7 @@ PRODUCT_PACKAGES += \
 ## Camera
 PRODUCT_PACKAGES += \
     libcamera \
-    camera.msm7x27 \
-    LegacyCamera
+    camera.msm7x27 
 
 ## Device specific
 PRODUCT_PACKAGES += \
