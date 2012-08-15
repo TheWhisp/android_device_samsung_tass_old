@@ -27,6 +27,7 @@ wifi.interface=wlan0
 wifi.supplicant_scan_interval=30
 
 ## System and Misc.
+gfx.highend_override=yes
 qemu.sf.lcd_density=120
 ro.tether.denied=false
 sys.checkfs.fat=false
