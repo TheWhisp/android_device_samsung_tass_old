@@ -21,11 +21,10 @@
 
 # Inherit from those products. Most specific first.
 
-
 #
-### This also includes proprietary files!
+### This also includes proprietary files... this may change someday.
+### TODO: Above line explains everything.
 #
-
 
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 DEVICE_PACKAGE_OVERLAYS += device/samsung/tass/overlay
@@ -64,10 +63,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gps.tass \
     librpc 
-
-## Applications
-PRODUCT_PACKAGES += \
-    FileManager 
   
 ## Other
 PRODUCT_PACKAGES += \

@@ -19,7 +19,7 @@
 # product configuration (apps).
 #
 
-# Inherir main files to copy!
+# Inherit device specific files
 $(call inherit-product, device/samsung/tass/device_tass.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
