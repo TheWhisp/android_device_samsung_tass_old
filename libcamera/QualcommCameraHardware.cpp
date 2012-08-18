@@ -166,9 +166,9 @@ union zoomimage
     struct mdp_blit_req_list list;
 } zoomImage;
 
-//Default to VGA
-#define DEFAULT_PREVIEW_WIDTH 640
-#define DEFAULT_PREVIEW_HEIGHT 480
+//Default to QVGA
+#define DEFAULT_PREVIEW_WIDTH 320
+#define DEFAULT_PREVIEW_HEIGHT 240
 
 /*
  * Modifying preview size requires modification
