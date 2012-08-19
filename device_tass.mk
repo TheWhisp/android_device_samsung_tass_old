@@ -101,18 +101,14 @@ PRODUCT_COPY_FILES += \
 
 ## Modules
 PRODUCT_COPY_FILES += \
-    device/samsung/tass/prebuilt/lib/modules/fsr.ko:system/lib/modules/fsr.ko \
-    device/samsung/tass/prebuilt/lib/modules/fsr_stl.ko:system/lib/modules/fsr_stl.ko \
-    device/samsung/tass/prebuilt/lib/modules/rfs_glue.ko:system/lib/modules/rfs_glue.ko \
-    device/samsung/tass/prebuilt/lib/modules/rfs_fat.ko:system/lib/modules/rfs_fat.ko \
-    device/samsung/tass/prebuilt/lib/modules/sec_param.ko:system/lib/modules/sec_param.ko
+    device/samsung/tass/prebuilt/lib/modules/zram.ko:system/lib/modules/zram.ko \
+    device/samsung/tass/prebuilt/lib/modules/cifs.ko:system/lib/modules/cifs.ko \
+    device/samsung/tass/prebuilt/lib/modules/tun.ko:system/lib/modules/tun.ko
 
 ## Root modules
 PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
     device/samsung/tass/prebuilt/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
-    device/samsung/tass/prebuilt/lib/modules/rfs_glue.ko:root/lib/modules/rfs_glue.ko \
-    device/samsung/tass/prebuilt/lib/modules/rfs_fat.ko:root/lib/modules/rfs_fat.ko \
     device/samsung/tass/prebuilt/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko
 
 ## Prebuilt init.d scripts
