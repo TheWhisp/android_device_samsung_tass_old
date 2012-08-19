@@ -218,8 +218,7 @@ PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/bin/qmuxd:system/bin/qmuxd \
     device/samsung/tass/prebuilt/lib/ril/libdiag.so:system/lib/libdiag.so \
     device/samsung/tass/prebuilt/lib/ril/libsec-ril.so:system/lib/libsec-ril.so \
-    device/samsung/tass/prebuilt/lib/ril/libsecril-client.so:system/lib/libsecril-client.so \
-    device/samsung/tass/prebuilt/lib/ril/libril.so:system/lib/libril.so 
+    device/samsung/tass/prebuilt/lib/ril/libsecril-client.so:system/lib/libsecril-client.so
 
 ## OMX proprietaries
 PRODUCT_COPY_FILES += \
