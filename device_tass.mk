@@ -210,7 +210,8 @@ PRODUCT_COPY_FILES += \
 ## Sensor
 PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/bin/memsicd:system/bin/memsicd \
-    device/samsung/tass/prebuilt/lib/hw/sensors.tass.so:system/lib/hw/sensors.tass.so 
+    device/samsung/tass/prebuilt/lib/hw/sensors.tass.so:system/lib/hw/sensors.tass.so \
+    device/samsung/tass/prebuilt/lib/hw/lights.default.so:system/lib/hw/lights.default.so  
 
 ## RIL
 PRODUCT_COPY_FILES += \
