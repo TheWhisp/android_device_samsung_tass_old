@@ -99,6 +99,22 @@ PRODUCT_COPY_FILES += \
     device/samsung/tass/ramdisk/init.gt-s5570.rc:root/init.gt-s5570.rc \
     device/samsung/tass/ramdisk/init.rc:root/init.rc 
 
+## Modules
+PRODUCT_COPY_FILES += \
+    device/samsung/tass/prebuilt/lib/modules/fsr.ko:system/lib/modules/fsr.ko \
+    device/samsung/tass/prebuilt/lib/modules/fsr_stl.ko:system/lib/modules/fsr_stl.ko \
+    device/samsung/tass/prebuilt/lib/modules/rfs_glue.ko:system/lib/modules/rfs_glue.ko \
+    device/samsung/tass/prebuilt/lib/modules/rfs_fat.ko:system/lib/modules/rfs_fat.ko \
+    device/samsung/tass/prebuilt/lib/modules/sec_param.ko:system/lib/modules/sec_param.ko
+
+## Root modules
+PRODUCT_COPY_FILES += \
+    device/samsung/tass/prebuilt/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
+    device/samsung/tass/prebuilt/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
+    device/samsung/tass/prebuilt/lib/modules/rfs_glue.ko:root/lib/modules/rfs_glue.ko \
+    device/samsung/tass/prebuilt/lib/modules/rfs_fat.ko:root/lib/modules/rfs_fat.ko \
+    device/samsung/tass/prebuilt/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko
+
 ## Prebuilt init.d scripts
 PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/etc/init.d/01bt:system/etc/init.d/01bt \
