@@ -105,11 +105,11 @@ PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/lib/modules/cifs.ko:system/lib/modules/cifs.ko \
     device/samsung/tass/prebuilt/lib/modules/tun.ko:system/lib/modules/tun.ko
 
-## Root modules
+## Ramdisk modules
 PRODUCT_COPY_FILES += \
-    device/samsung/tass/prebuilt/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
-    device/samsung/tass/prebuilt/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
-    device/samsung/tass/prebuilt/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko
+    device/samsung/tass/ramdisk/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
+    device/samsung/tass/ramdisk/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
+    device/samsung/tass/ramdisk/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko
 
 ## Prebuilt init.d scripts
 PRODUCT_COPY_FILES += \
@@ -137,7 +137,7 @@ PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
     device/samsung/tass/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
 
-## Audio blob
+## ICS audio blob
 PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/lib/hw/audio.primary.tass.so:system/lib/hw/audio.primary.tass.so \
     device/samsung/tass/prebuilt/lib/hw/audio_policy.tass.so:system/lib/hw/audio_policy.tass.so
@@ -216,44 +216,44 @@ PRODUCT_COPY_FILES += \
 ## RIL
 PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/bin/qmuxd:system/bin/qmuxd \
-    device/samsung/tass/prebuilt/lib/libdiag.so:system/lib/libdiag.so \
-    device/samsung/tass/prebuilt/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    device/samsung/tass/prebuilt/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    device/samsung/tass/prebuilt/lib/libril.so:system/lib/libril.so 
+    device/samsung/tass/prebuilt/lib/ril/libdiag.so:system/lib/libdiag.so \
+    device/samsung/tass/prebuilt/lib/ril/libsec-ril.so:system/lib/libsec-ril.so \
+    device/samsung/tass/prebuilt/lib/ril/libsecril-client.so:system/lib/libsecril-client.so \
+    device/samsung/tass/prebuilt/lib/ril/libril.so:system/lib/libril.so 
 
 ## OMX proprietaries
 PRODUCT_COPY_FILES += \
-    device/samsung/tass/prebuilt/lib/libmm-adspsvc.so:system/lib/libmm-adspsvc.so \
-    device/samsung/tass/prebuilt/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
-    device/samsung/tass/prebuilt/lib/libOmxAacEnc.so:system/lib/libOmxAacEnc.so \
-    device/samsung/tass/prebuilt/lib/libOmxAdpcmDec.so:system/lib/libOmxAdpcmDec.so \
-    device/samsung/tass/prebuilt/lib/libOmxAmrDec.so:system/lib/libOmxAmrDec.so \
-    device/samsung/tass/prebuilt/lib/libOmxAmrEnc.so:system/lib/libOmxAmrEnc.so \
-    device/samsung/tass/prebuilt/lib/libOmxAmrRtpDec.so:system/lib/libOmxAmrRtpDec.so \
-    device/samsung/tass/prebuilt/lib/libOmxAmrwbDec.so:system/lib/libOmxAmrwbDec.so \
-    device/samsung/tass/prebuilt/lib/libOmxEvrcEnc.so:system/lib/libOmxEvrcEnc.so \
-    device/samsung/tass/prebuilt/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
-    device/samsung/tass/prebuilt/lib/libOmxEvrcHwDec.so:system/lib/libOmxEvrcHwDec.so \
-    device/samsung/tass/prebuilt/lib/libOmxH264Dec.so:system/lib/libOmxH264Dec.so \
-    device/samsung/tass/prebuilt/lib/libOmxMp3Dec.so:system/lib/libOmxMp3Dec.so \
-    device/samsung/tass/prebuilt/lib/libOmxMpeg4Dec.so:system/lib/libOmxMpeg4Dec.so \
-    device/samsung/tass/prebuilt/lib/libOmxOn2Dec.so:system/lib/libOmxOn2Dec.so \
-    device/samsung/tass/prebuilt/lib/libOmxQcelp13Enc.so:system/lib/libOmxQcelp13Enc.so \
-    device/samsung/tass/prebuilt/lib/libOmxQcelpDec.so:system/lib/libOmxQcelpDec.so \
-    device/samsung/tass/prebuilt/lib/libOmxQcelpHwDec.so:system/lib/libOmxQcelpHwDec.so \
-    device/samsung/tass/prebuilt/lib/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
-    device/samsung/tass/prebuilt/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
-    device/samsung/tass/prebuilt/lib/libOmxWmvDec.so:system/lib/libOmxWmvDec.so 
+    device/samsung/tass/prebuilt/lib/omx/libmm-adspsvc.so:system/lib/libmm-adspsvc.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxAacDec.so:system/lib/libOmxAacDec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxAacEnc.so:system/lib/libOmxAacEnc.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxAdpcmDec.so:system/lib/libOmxAdpcmDec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxAmrDec.so:system/lib/libOmxAmrDec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxAmrEnc.so:system/lib/libOmxAmrEnc.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxAmrRtpDec.so:system/lib/libOmxAmrRtpDec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxAmrwbDec.so:system/lib/libOmxAmrwbDec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxEvrcEnc.so:system/lib/libOmxEvrcEnc.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxEvrcHwDec.so:system/lib/libOmxEvrcHwDec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxH264Dec.so:system/lib/libOmxH264Dec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxMp3Dec.so:system/lib/libOmxMp3Dec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxMpeg4Dec.so:system/lib/libOmxMpeg4Dec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxOn2Dec.so:system/lib/libOmxOn2Dec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxQcelp13Enc.so:system/lib/libOmxQcelp13Enc.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxQcelpDec.so:system/lib/libOmxQcelpDec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxQcelpHwDec.so:system/lib/libOmxQcelpHwDec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
+    device/samsung/tass/prebuilt/lib/omx/libOmxWmvDec.so:system/lib/libOmxWmvDec.so 
 
 ## OMX shared
 PRODUCT_COPY_FILES += \
-    device/samsung/tass/prebuilt/lib/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \
-    device/samsung/tass/prebuilt/lib/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so \
-    device/samsung/tass/prebuilt/lib/libomx_amrenc_sharedlibrary.so:system/lib/libomx_amrenc_sharedlibrary.so \
-    device/samsung/tass/prebuilt/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \
-    device/samsung/tass/prebuilt/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \
-    device/samsung/tass/prebuilt/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
-    device/samsung/tass/prebuilt/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so
+    device/samsung/tass/prebuilt/lib/omx/shared/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \
+    device/samsung/tass/prebuilt/lib/omx/shared/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so \
+    device/samsung/tass/prebuilt/lib/omx/shared/libomx_amrenc_sharedlibrary.so:system/lib/libomx_amrenc_sharedlibrary.so \
+    device/samsung/tass/prebuilt/lib/omx/shared/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \
+    device/samsung/tass/prebuilt/lib/omx/shared/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \
+    device/samsung/tass/prebuilt/lib/omx/shared/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
+    device/samsung/tass/prebuilt/lib/omx/shared/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
