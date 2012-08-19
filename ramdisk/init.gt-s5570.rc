@@ -31,6 +31,9 @@ on init
     insmod /lib/modules/fsr.ko
     insmod /lib/modules/fsr_stl.ko
     insmod /lib/modules/sec_param.ko
+    insmod /system/lib/modules/zram.ko
+    insmod /system/lib/modules/cifs.ko
+    insmod /system/lib/modules/tun.ko
 
 on boot
 
