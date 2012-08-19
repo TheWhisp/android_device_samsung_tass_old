@@ -29,7 +29,7 @@ include $(CLEAR_VARS)
 LOCAL_C_FLAGS        += -O3
 LOCAL_MODULE_TAGS    := optional
 LOCAL_MODULE_PATH    := $(TARGET_OUT_SHARED_LIBRARIES)/hw
-LOCAL_MODULE         := camera.$(TARGET_BOARD_PLATFORM)
+LOCAL_MODULE         := camera.$(TARGET_DEVICE)
 LOCAL_SRC_FILES      := cameraHal.cpp
 LOCAL_PRELINK_MODULE := false
 

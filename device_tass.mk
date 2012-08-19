@@ -53,7 +53,7 @@ PRODUCT_PACKAGES += \
 ## Camera
 PRODUCT_PACKAGES += \
     libcamera \
-    camera.msm7x27 
+    camera.tass 
 
 ## Device specific
 PRODUCT_PACKAGES += \
