@@ -37,6 +37,8 @@ PRODUCT_PACKAGES += \
 ## Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
+    audio.primary.tass \
+    audio_policy.tass \
     libaudioutils
 
 ## Camera
@@ -117,11 +119,6 @@ PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
     device/samsung/tass/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
     device/samsung/tass/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
-
-## ICS audio blob
-PRODUCT_COPY_FILES += \
-    device/samsung/tass/prebuilt/lib/hw/audio.primary.tass.so:system/lib/hw/audio.primary.tass.so \
-    device/samsung/tass/prebuilt/lib/hw/audio_policy.tass.so:system/lib/hw/audio_policy.tass.so
 
 ## Keymap
 PRODUCT_COPY_FILES += \

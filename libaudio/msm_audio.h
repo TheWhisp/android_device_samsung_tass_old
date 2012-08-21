@@ -60,11 +60,6 @@
 #define AUDIO_START_VOICE    _IOW(AUDIO_IOCTL_MAGIC, 35, unsigned)
 #define AUDIO_STOP_VOICE     _IOW(AUDIO_IOCTL_MAGIC, 36, unsigned)
 #define AUDIO_REINIT_ACDB    _IOW(AUDIO_IOCTL_MAGIC, 39, unsigned)
-#define AUDIO_OUTPORT_FLUSH  _IOW(AUDIO_IOCTL_MAGIC, 40, unsigned short)
-#define AUDIO_SET_ERR_THRESHOLD_VALUE _IOW(AUDIO_IOCTL_MAGIC, 41, \
-					unsigned short)
-#define AUDIO_GET_BITSTREAM_ERROR_INFO _IOR(AUDIO_IOCTL_MAGIC, 42, \
-			       struct msm_audio_bitstream_error_info)
 /* Qualcomm extensions */
 #define AUDIO_SET_STREAM_CONFIG   _IOW(AUDIO_IOCTL_MAGIC, 80, \
 				struct msm_audio_stream_config)
@@ -228,14 +223,6 @@ struct msm_snd_endpoint {
 #define SND_AVC_CTL _IOW(SND_IOCTL_MAGIC, 6, unsigned *)
 #define SND_AGC_CTL _IOW(SND_IOCTL_MAGIC, 7, unsigned *)
 
-struct msm_snd_extamp_config {
- uint32_t device;
- uint32_t speaker_volume;
- uint32_t headset_volume;
-};
-
-#define SND_SET_EXTAMP _IOW(SND_IOCTL_MAGIC, 8, struct msm_snd_extamp_config *)
-
 struct msm_audio_pcm_config {
 	uint32_t pcm_feedback;	/* 0 - disable > 0 - enable */
 	uint32_t buffer_count;	/* Number of buffers to allocate */
@@ -243,16 +230,11 @@ struct msm_audio_pcm_config {
 				   PCM samples */
 };
 
-#define SND_SET_MAIN_MIC 	_IOW(SND_IOCTL_MAGIC, 9, int *)
-#define SND_SET_SUB_MIC 	_IOW(SND_IOCTL_MAGIC, 10, int *)
-#define SND_MAX8899_AMP_OFF _IOW(SND_IOCTL_MAGIC, 11, int *)
-
 #define AUDIO_EVENT_SUSPEND 0
 #define AUDIO_EVENT_RESUME 1
 #define AUDIO_EVENT_WRITE_DONE 2
 #define AUDIO_EVENT_READ_DONE   3
 #define AUDIO_EVENT_STREAM_INFO 4
-#define AUDIO_EVENT_BITSTREAM_ERROR_INFO 5
 
 #define AUDIO_CODEC_TYPE_MP3 0
 #define AUDIO_CODEC_TYPE_AAC 1
@@ -266,16 +248,9 @@ struct msm_audio_bitstream_info {
 	uint32_t unused[3];
 };
 
-struct msm_audio_bitstream_error_info {
-	uint32_t dec_id;
-	uint32_t err_msg_indicator;
-	uint32_t err_type;
-};
-
 union msm_audio_event_payload {
 	struct msm_audio_aio_buf aio_buf;
 	struct msm_audio_bitstream_info stream_info;
-	struct msm_audio_bitstream_error_info error_info;
 	int reserved;
 };
 
