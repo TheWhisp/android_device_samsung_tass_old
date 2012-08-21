@@ -8,10 +8,9 @@ ro.sf.lcd_density=120
 media.stagefright.enable-player=true
 windowsmgr.max_events_per_sec=150
 video.accelerate.hw=1
-ro.telephony.call_ring.delay=0
-ro.ril.disable.power.collapse=0
+debug.sf.hw=1
 
-## RIL
+## RIL, telephony
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/smd0
 ro.telephony.default_network=0
@@ -20,11 +19,13 @@ ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 ro.telephony.ril_class=TassRIL
 mobiledata.interfaces=pdp0,gprs,ppp0
+ro.telephony.call_ring.delay=0
+ro.ril.disable.power.collapse=0
 DEVICE_PROVISIONED=1
 
 ## Wi-Fi interface
 wifi.interface=wlan0
-wifi.supplicant_scan_interval=60
+wifi.supplicant_scan_interval=120
 
 ## System and Misc.
 qemu.sf.lcd_density=120

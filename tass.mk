@@ -160,10 +160,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/lib/hw/gps.tass.so:system/lib/hw/gps.tass.so
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    keyguard.no_require_sim=true \
-    ro.com.android.dateformat=dd-MM-yyyy \
-
 # LDPI assets
 PRODUCT_LOCALES += en
 PRODUCT_AAPT_CONFIG := normal ldpi mdpi

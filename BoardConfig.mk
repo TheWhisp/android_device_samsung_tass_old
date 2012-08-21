@@ -108,9 +108,9 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/f
 BOARD_UMS_LUNFILE := "/sys/devices/platform/usb_mass_storage/lun0/file"
 
 ## Audio
-TARGET_PROVIDES_LIBAUDIO := true
 BOARD_USES_GENERIC_AUDIO := false
 BOARD_USES_AUDIO_LEGACY := false
+TARGET_PROVIDES_LIBAUDIO := true
 BOARD_USES_ICS_LIBAUDIO := true
 
 ## Touchscreen
