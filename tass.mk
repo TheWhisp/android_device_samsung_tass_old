@@ -12,20 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#
-# This file is the build configuration for a full Android
-# build for sapphire hardware. This cleanly combines a set of
-# device-specific aspects (drivers) with a device-agnostic
-# product configuration (apps).
-#
-
-# Inherit from those products. Most specific first.
-
-#
-### This also includes proprietary files... this may change someday.
-### TODO: Above line explains everything.
-#
-
 # Proprietary stuff
 $(call inherit-product, vendor/samsung/tass/tass-vendor.mk)
 # GPS configuratipm
