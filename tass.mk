@@ -44,7 +44,8 @@ PRODUCT_PACKAGES += \
 ## Camera
 PRODUCT_PACKAGES += \
     libcamera \
-    camera.tass 
+    camera.tass \
+    LegacyCamera 
 
 ## GPS
 PRODUCT_PACKAGES += \
