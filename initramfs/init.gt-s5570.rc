@@ -1,7 +1,5 @@
-# Copyright (C) 2012 The Android Open Source Project
-#
-
 on early-init
+
     mkdir /storage 0755 system sdcard_r
     mkdir /storage/sdcard0 0000 system system
     export EXTERNAL_STORAGE /storage/sdcard0
@@ -27,6 +25,7 @@ on fs
     write /sys/devices/virtual/block/stl14/queue/read_ahead_kb 4
 
 on init
+
 # insmod fsr modules
     insmod /lib/modules/fsr.ko
     insmod /lib/modules/fsr_stl.ko
@@ -36,10 +35,13 @@ on init
     insmod /system/lib/modules/tun.ko
 
 on boot
+
 # Fix trace
     mount debugfs /sys/kernel/debug /sys/kernel/debug
+
 # Increase read throughput from sd card
     write /sys/block/mmcblk0/bdi/read_ahead_kb 4096
+
 # cpufreq configurations
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor ondemand
     write /sys/devices/system/cpu/cpu0/cpufreq/ondemand/up_threshold 95

@@ -84,6 +84,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/tass/ramdisk/ueventd.rc:root/ueventd.rc \
     device/samsung/tass/ramdisk/init.gt-s5570.rc:root/init.gt-s5570.rc \
+    device/samsung/tass/ramdisk/init.gt-s5570.usb.rc:root/init.gt-s5570.usb.rc \
     device/samsung/tass/ramdisk/init.rc:root/init.rc \
     device/samsung/tass/ramdisk/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
     device/samsung/tass/ramdisk/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \

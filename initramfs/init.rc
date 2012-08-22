@@ -6,6 +6,7 @@
 
 import /init.gt-s5570.rc
 import /init.usb.rc
+import /init.gt-s5570.usb.rc
 import /init.trace.rc
 
 on early-init
