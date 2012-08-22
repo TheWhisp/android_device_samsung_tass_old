@@ -1,4 +1,5 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <dimen name="time_text_size">120dip</dimen>
     <dimen name="ampm_text_size">25dip</dimen>
     <dimen name="date_text_size">15sp</dimen>
@@ -9,4 +10,5 @@
     <dimen name="ampm_margin_top">16dip</dimen>
     <dimen name="font_margin_adjust">8dip</dimen>
     <dimen name="next_alarm_margin_top">-5dip</dimen>
+
 </resources>
