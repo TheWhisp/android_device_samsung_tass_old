@@ -46,7 +46,7 @@
 #include <linux/ioctl.h>
 #include <camera/CameraParameters.h>
 
-#include "linux/msm_mdp.h"
+#include <linux/msm_mdp.h>
 #include <linux/fb.h>
 
 #define LIKELY(exp)   __builtin_expect(!!(exp), 1)

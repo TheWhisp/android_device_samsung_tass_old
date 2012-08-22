@@ -31,11 +31,11 @@
 #include <binder/MemoryBase.h>
 #include <binder/MemoryHeapBase.h>
 #include <stdint.h>
-#include "Overlay.h"
+#include <ui/Overlay.h>
 
 extern "C" {
 #include <linux/android_pmem.h>
-#include <msm_camera.h>
+#include "msm_camera.h"
 }
 
 struct str_map {
