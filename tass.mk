@@ -98,8 +98,7 @@ PRODUCT_COPY_FILES += \
 
 ## Prebuilt init.d scripts
 PRODUCT_COPY_FILES += \
-    device/samsung/tass/prebuilt/etc/init.d/01bt:system/etc/init.d/01bt \
-    device/samsung/tass/prebuilt/etc/init.d/02runonce:system/etc/init.d/02runonce
+    device/samsung/tass/prebuilt/etc/init.d/01bt:system/etc/init.d/01bt 
 
 ## MAC Address
 PRODUCT_COPY_FILES += \
