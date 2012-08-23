@@ -1,4 +1,4 @@
-on property:sys.usb.config=mass_storage,rndis,adb
+on property:sys.usb.config=none
     exec /system/bin/netcfg usb0 down
     write /sys/class/usb_composite/usb_mass_storage/enable 0
     write /sys/class/usb_composite/rndis/enable 0
