@@ -124,7 +124,7 @@ on boot
     chown gps system /data/gps
 
 # Enable MASS storage on SDCARD
-    write /sys/devices/platform/mass_storage/lun0/file /dev/block/mmcblk0p1
+    write /sys/devices/platform/usb_mass_storage/lun0/file /dev/block/mmcblk0p1
     write /sys/bus/platform/drivers/msm_sdcc/msm_sdcc.1/polling 1
 
     chown system system /sys/class/backlight/rt9393/brightness

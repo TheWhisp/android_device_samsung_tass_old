@@ -106,9 +106,6 @@ BOARD_MOBILEDATA_INTERFACE_NAME := "pdp0"
 ## UMS
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
 BOARD_UMS_LUNFILE := "/sys/devices/platform/usb_mass_storage/lun0/file"
-BOARD_USE_USB_MASS_STORAGE_SWITCH := true
-BOARD_SDCARD_DEVICE_INTERNAL := /dev/block/vold/179:1
-BOARD_SDEXT_DEVICE := /dev/block/vold/179:2
 
 ## Touchscreen
 BOARD_USE_LEGACY_TOUCHSCREEN := true
