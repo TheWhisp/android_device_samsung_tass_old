@@ -90,12 +90,6 @@ PRODUCT_COPY_FILES += \
     device/samsung/tass/initramfs/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
     device/samsung/tass/initramfs/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko
 
-## Modules
-PRODUCT_COPY_FILES += \
-    device/samsung/tass/prebuilt/lib/modules/zram.ko:system/lib/modules/zram.ko \
-    device/samsung/tass/prebuilt/lib/modules/cifs.ko:system/lib/modules/cifs.ko \
-    device/samsung/tass/prebuilt/lib/modules/tun.ko:system/lib/modules/tun.ko
-
 ## Prebuilt init.d scripts
 PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/etc/init.d/01bt:system/etc/init.d/01bt 
