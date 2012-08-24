@@ -1,7 +1,5 @@
 /*
  * Copyright (C) 2012, Raviprasad V Mummidi.
- * Modified for Galaxy-devices by Erik Castricum 23/08/2012
- * Kindly taken from adfad666 from lgics
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -423,10 +421,12 @@ CameraHAL_FixupParams(android::CameraParameters &settings)
       "640x480,576x432,480x320,384x288,352x288,320x240,240x160,176x144";
    const char *video_sizes =
       "640x480,352x288,320x240,176x144";
-   const char *preferred_size       = "320x240";
-   const char *preview_frame_rates  = "30,27,24,15";
+   const char *preferred_size       = "480x320";
+   const char *preview_frame_rates  = "10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25";
    const char *preferred_frame_rate = "15";
    const char *frame_rate_range     = "(10,25)";
+   const char *preferred_horizontal_viewing_angle = "51.2";
+   const char *preferred_vertical_viewing_angle = "39.4";
 
    settings.set(android::CameraParameters::KEY_VIDEO_FRAME_FORMAT,
                 android::CameraParameters::PIXEL_FORMAT_YUV420SP);
@@ -437,12 +437,12 @@ CameraHAL_FixupParams(android::CameraParameters &settings)
                    preview_sizes);
    }
 
-
+#if 0
    if (!settings.get(android::CameraParameters::KEY_SUPPORTED_VIDEO_SIZES)) {
       settings.set(android::CameraParameters::KEY_SUPPORTED_VIDEO_SIZES,
                    video_sizes);
    }
-
+#endif
 
    if (!settings.get(android::CameraParameters::KEY_VIDEO_SIZE)) {
       settings.set(android::CameraParameters::KEY_VIDEO_SIZE, preferred_size);
@@ -469,6 +469,15 @@ CameraHAL_FixupParams(android::CameraParameters &settings)
                    frame_rate_range);
    }
 
+   if (!settings.get(android::CameraParameters::KEY_HORIZONTAL_VIEW_ANGLE)) {
+      settings.set(android::CameraParameters::KEY_HORIZONTAL_VIEW_ANGLE,
+                   preferred_horizontal_viewing_angle);
+   }
+
+   if (!settings.get(android::CameraParameters::KEY_VERTICAL_VIEW_ANGLE)) {
+      settings.set(android::CameraParameters::KEY_VERTICAL_VIEW_ANGLE,
+                   preferred_vertical_viewing_angle);
+   }
 }
 
 /* Hardware Camera interface handlers. */
@@ -820,3 +829,4 @@ qcamera_device_open(const hw_module_t* module, const char* name,
    *device = &camera_device->common;
    return NO_ERROR;
 }
+
