@@ -105,6 +105,8 @@ CameraHAL_CopyBuffers_Hw(int srcFd, int destFd,
     int    fb_fd = open("/dev/graphics/fb0", O_RDWR);
 
 #ifndef MSM_COPY_HW
+    if (fb_fd > 0)
+        close(fb_fd);
     return false;
 #endif
 
