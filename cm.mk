@@ -1,12 +1,11 @@
-## Device specific configuration
-$(call inherit-product, device/samsung/tass/tass.mk)
-
-## CyanogenMod stuff
+## Specify phone tech before including full_phone
 $(call inherit-product, vendor/cm/config/gsm.mk)
+
+# Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
-## AOSP stuff
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Inherit device configuration
+$(call inherit-product, device/samsung/tass/full_tass.mk)
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := GalaxyMini
