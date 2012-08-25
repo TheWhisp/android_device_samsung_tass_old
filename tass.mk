@@ -141,10 +141,7 @@ PRODUCT_LOCALES += en
 PRODUCT_AAPT_CONFIG := normal ldpi mdpi
 PRODUCT_AAPT_PREF_CONFIG := ldpi
 
-# HardwareRenderer properties
+# Build.prop overrides
 PRODUCT_PROPERTY_OVERRIDES += \
     hwui.render_dirty_regions=false
-
-# Misc properties
-PRODUCT_PROPERTY_OVERRIDES += \
     pm.sleep_mode=1
