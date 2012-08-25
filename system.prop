@@ -48,4 +48,4 @@ dalvik.vm.dexopt-data-only=1
 persist.sys.use_dithering=2
 
 ## Storage
-ro.additionalmounts=/storage0/sdcard
+ro.additionalmounts=/storage/sdcard0
