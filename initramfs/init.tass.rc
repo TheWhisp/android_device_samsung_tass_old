@@ -1,5 +1,4 @@
 on init
-# insmod fsr modules
     insmod /lib/modules/fsr.ko
     insmod /lib/modules/fsr_stl.ko
     insmod /lib/modules/sec_param.ko
@@ -8,7 +7,6 @@ on early-init
     mkdir /storage 0755 system sdcard_r
     mkdir /storage/sdcard0 0000 system system
     export EXTERNAL_STORAGE /storage/sdcard0
-    # for backwards compatibility
     symlink /storage/sdcard0 /mnt/sdcard
     symlink /storage/sdcard0 /sdcard
    
