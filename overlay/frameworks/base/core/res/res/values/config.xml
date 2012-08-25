@@ -56,7 +56,7 @@
     <integer name="config_backKillTimeout">1000</integer>
 
     <!-- True will enable the electron beam screen-off animation. -->
-    <bool name="config_screenOffAnimation">false</bool>
+    <bool name="config_screenOffAnimation">true</bool>
     
     <bool name="config_batterySdCardAccessibility">true</bool>
 
