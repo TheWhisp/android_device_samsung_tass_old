@@ -23,6 +23,10 @@ ro.telephony.call_ring.delay=0
 ro.ril.disable.power.collapse=0
 DEVICE_PROVISIONED=1
 
+## A-GPS
+ro.ril.def.agps.mode=2
+ro.ril.def.agps.feature=1
+
 ## Wi-Fi interface
 wifi.interface=wlan0
 wifi.supplicant_scan_interval=120
