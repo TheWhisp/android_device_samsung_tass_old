@@ -82,8 +82,8 @@ PRODUCT_COPY_FILES += \
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/tass/initramfs/ueventd.rc:root/ueventd.tass.rc \
-    device/samsung/tass/initramfs/init.gt-s5570.rc:root/init.tass.rc \
+    device/samsung/tass/initramfs/ueventd.tass.rc:root/ueventd.tass.rc \
+    device/samsung/tass/initramfs/init.tass.rc:root/init.tass.rc \
     device/samsung/tass/initramfs/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
     device/samsung/tass/initramfs/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
     device/samsung/tass/initramfs/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko
