@@ -143,5 +143,5 @@ PRODUCT_AAPT_PREF_CONFIG := ldpi
 
 # Build.prop overrides
 PRODUCT_PROPERTY_OVERRIDES += \
-    hwui.render_dirty_regions=false
+    hwui.render_dirty_regions=false \
     pm.sleep_mode=1
