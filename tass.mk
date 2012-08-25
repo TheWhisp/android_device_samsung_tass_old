@@ -27,7 +27,6 @@ PRODUCT_PACKAGES += \
 ## Display
 PRODUCT_PACKAGES += \
     gralloc.msm7x27 \
-    hwcomposer.msm7x27 \
     copybit.msm7x27 \
     libQcomUI \
     libgenlock \
@@ -82,6 +81,8 @@ PRODUCT_COPY_FILES += \
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
+    device/samsung/tass/initramfs/ueventd.rc:root/ueventd.rc \
+    device/samsung/tass/initramfs/init.rc:root/init.rc \
     device/samsung/tass/initramfs/ueventd.tass.rc:root/ueventd.tass.rc \
     device/samsung/tass/initramfs/init.tass.rc:root/init.tass.rc \
     device/samsung/tass/initramfs/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
