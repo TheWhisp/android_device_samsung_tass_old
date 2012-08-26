@@ -138,7 +138,7 @@ PRODUCT_COPY_FILES += \
 
 ## Prebuilt libsurfaceflinger_client
 PRODUCT_COPY_FILES += \
-    device/samsung/tass/prebuilt/lib/libsurfaceflinger_client.so:system/lib/libsurfaceflinger_client.so
+    device/samsung/tass/prebuilt/lib/hw/libsurfaceflinger_client.so:system/lib/hw/libsurfaceflinger_client.so
 
 # LDPI assets
 PRODUCT_LOCALES += en
