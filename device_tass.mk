@@ -12,9 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Proprietary stuff
+## Inherit vendor proprietary files
 $(call inherit-product, vendor/samsung/tass/tass-vendor.mk)
-# GPS configuratipm
+
+## GPS configuration
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 DEVICE_PACKAGE_OVERLAYS += device/samsung/tass/overlay
 
@@ -91,16 +92,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/etc/init.d/01bt:system/etc/init.d/01bt 
 
-## MAC Address
-PRODUCT_COPY_FILES += \
-    device/samsung/tass/prebuilt/bin/get_macaddrs:system/bin/get_macaddrs
-
-## Wi-Fi config
+## Wi-Fi & networking
 PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     device/samsung/tass/prebuilt/etc/wifi/hostapd.conf:system/etc/wifi/hostapd.conf \
     device/samsung/tass/prebuilt/etc/wifi/dhcpcd.conf:system/etc/wifi/dhcpcd.conf \
-    device/samsung/tass/prebuilt/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf 
+    device/samsung/tass/prebuilt/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
+    device/samsung/tass/prebuilt/bin/get_macaddrs:system/bin/get_macaddrs
 
 ## Media
 PRODUCT_COPY_FILES += \

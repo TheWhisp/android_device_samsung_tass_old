@@ -14,7 +14,6 @@ debug.sf.hw=1
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/smd0
 ro.telephony.default_network=0
-ro.com.android.dataroaming=false
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 ro.telephony.ril_class=TassRIL
@@ -29,15 +28,12 @@ ro.ril.def.agps.feature=1
 
 ## Wi-Fi interface
 wifi.interface=wlan0
-wifi.supplicant_scan_interval=120
+wifi.supplicant_scan_interval=15
 
 ## System and Misc.
 qemu.sf.lcd_density=120
 ro.tether.denied=false
-sys.checkfs.fat=false
 ro.vold.umsdirtyratio=20
-ro.com.google.locationfeatures=1
-ro.setupwizard.enable_bypass=1
 dalvik.vm.lockprof.threshold=500
 dalvik.vm.dexopt-flags=m=y
 dalvik.vm.heapstartsize=5m	
