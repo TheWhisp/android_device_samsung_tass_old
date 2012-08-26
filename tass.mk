@@ -136,10 +136,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/tass/prebuilt/lib/hw/gps.tass.so:system/lib/hw/gps.tass.so
 
-## Prebuilt libsurfaceflinger_client
-PRODUCT_COPY_FILES += \
-    device/samsung/tass/prebuilt/lib/hw/libsurfaceflinger_client.so:system/lib/hw/libsurfaceflinger_client.so
-
 # LDPI assets
 PRODUCT_LOCALES += en
 PRODUCT_AAPT_CONFIG := normal ldpi mdpi
