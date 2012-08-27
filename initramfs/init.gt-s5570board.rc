@@ -4,7 +4,7 @@ on init
     insmod /lib/modules/sec_param.ko
 
 on early-init
-    mkdir /storage 0755 system sdcard_r
+    mkdir /storage 0775 system sdcard_r
     mkdir /storage/sdcard0 0000 system system
     export EXTERNAL_STORAGE /storage/sdcard0
     symlink /storage/sdcard0 /mnt/sdcard
@@ -116,7 +116,7 @@ on boot
     chown gps system /data/gps
 
 # Enable MASS storage on SDCARD
-    write /sys/devices/platform/mass_storage/lun0/file /dev/block/mmcblk0p1
+    write /sys/devices/platform/usb_mass_storage/lun0/file /dev/block/mmcblk0p1
     write /sys/bus/platform/drivers/msm_sdcc/msm_sdcc.1/polling 1
 
 service dhcp-service /system/bin/netcfg wlan0 dhcp
