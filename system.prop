@@ -42,4 +42,8 @@ dalvik.vm.heapsize=48m
 dalvik.vm.execution-mode=int:jit
 dalvik.vm.dexopt-data-only=1
 persist.sys.use_dithering=2
-persist.sys.usb.config=mass_storage
+
+## USB
+sys.usb.config=mass_storage,adb
+persist.sys.usb.config=mass_storage,adb
+persist.service.adb.enable=1
