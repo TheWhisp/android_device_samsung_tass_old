@@ -116,7 +116,7 @@ on boot
     chown gps system /data/gps
 
 # Enable MASS storage on SDCARD
-    write /sys/devices/platform/usb_mass_storage/lun0/file /dev/block/mmcblk0p1
+    write /sys/devices/platform/mass_storage/lun0/file /dev/block/mmcblk0p1
     write /sys/bus/platform/drivers/msm_sdcc/msm_sdcc.1/polling 1
 
 service dhcp-service /system/bin/netcfg wlan0 dhcp
